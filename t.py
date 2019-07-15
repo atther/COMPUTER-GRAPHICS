@@ -5,7 +5,7 @@ import sys
 import math
 def init():
 	glClearColor(0.0,0.0,0.0,1.0)    
-	gluOrtho2D(-20.0,20.0,-20.0,20.0)
+	gluOrtho2D(-200.0,200.0,-200.0,200.0)
 	glPointSize(5.0)
 
 def plotpoints():
@@ -13,9 +13,19 @@ def plotpoints():
 	glColor3f(1.0,0.0,0.0)
 
 	#draw  point
-	glBegin(GL_POINTS)
-    	for i in range(-10,10):
-    		glVertex2f(i+2.0,0.0)
+	glBegin(GL_LINES)
+    	glVertex2f(-40.0,-40.0)
+    	glVertex2f(-40.0,0.0)
+    	glVertex2f(0.0,0.0)
+    	glVertex2f(0.0,-40.0)
+    	glVertex2f(-40.0,-40.0)
+    	glVertex2f(0.0,-40.0)
+    	glVertex2f(-40.0,0.0)
+    	glVertex2f(0.0,0.0)
+    	glVertex2f(-40.0,0.0)
+    	glVertex2f(-20.0,20.0)
+    	glVertex2f(0.0,0.0)
+    	glVertex2f(-20.0,20.0)
 	glEnd()
 	
         
